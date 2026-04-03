@@ -86,9 +86,9 @@ threat intel meets autonomous execution
 ## // stack
 
 ```text
-python • go • sqlite • systemd • telegram bots
-ollama • llama.cpp • codex • claude-code
-raspberry pi 5 • tailscale • mosh • threat intel tooling
+python | go | sqlite | systemd | telegram bots
+ollama | llama.cpp | codex | claude-code
+raspberry pi 5 | tailscale | mosh | threat intel tooling
 ```
 
 ## // aesthetic
