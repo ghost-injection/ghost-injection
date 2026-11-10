@@ -3,111 +3,54 @@
 
   # ghost-injection
 
-  **Cybersecurity operator building local AI, offensive security automation, and threat intelligence systems**
-
-  <img src="https://img.shields.io/badge/mode-dark%20ops-0b0f14?style=for-the-badge&labelColor=11161d&color=11161d" />
-  <img src="https://img.shields.io/badge/signal-cyan-00e5ff?style=for-the-badge&labelColor=11161d" />
-  <img src="https://img.shields.io/badge/noise-orange-ff7a00?style=for-the-badge&labelColor=11161d" />
-  <img src="https://img.shields.io/badge/build-local%20first-7cff6b?style=for-the-badge&labelColor=11161d" />
+  **Security tooling, local AI systems, and operator interfaces — built to run on hardware I own.**
 </div>
 
 ---
 
-```text
-> dark_operator.theme = armed
-> palette = obsidian / cyan / orange / toxic_green
-> posture = local-first / operator-led / zero-boring-ui
-```
+I build things that hold up when the network is hostile and the cloud is someone else's
+computer: Android control planes over private tunnels, WiFi survey instruments,
+single-file incident utilities, and a Telegram bot that runs its own models on a
+Raspberry Pi.
 
-## // signal
+## Shipped
 
-I build security infrastructure that is styled with intent and engineered to do real work:
+| Repository | What it does |
+|---|---|
+| [**GhostLink**](https://github.com/ghost-injection/GhostLink) | Mirror and control Android from Windows over Tailscale. No USB, no port forwarding, no relay, no root. Native helper APK + themed scrcpy controller. |
+| [**AegisWardrive**](https://github.com/ghost-injection/AegisWardrive) | Passive WiFi survey for Android: sweep, score, map, export KML/CSV. No root, no monitor mode — it reads what the OS already broadcasts. |
+| [**reaper**](https://github.com/ghost-injection/creative-projects/tree/main/reaper) | Single-file process hunter for Windows and Linux. Find by name, port, or command line; kill the exact set with a dry run first. |
+| [**pid-sniper**](https://github.com/ghost-injection/AI-Research-OffSec/tree/main/pid-sniper) | Click a window, get its PID, parent, path, and class. Plus a popup radar that logs new dialogs as they appear. |
+| [**CipherShell Memory**](https://github.com/ghost-injection/CipherShell-Memory) | Private Obsidian vault used as durable memory for Codex, Hermes, Claude Code, and local model lanes. |
 
-- **PicoBot**: a sovereign operator bot running on a Raspberry Pi 5
-- **Ghostlink**: the local network and systems layer behind the node
-- **NEXUS**: wireless intelligence, scan deltas, and critical-infrastructure surfacing
-- **Duo AI bridge**: Codex + Claude operating in tandem without stepping on each other
-- **Local-first AI**: fast lanes, coder lanes, and sidecar runtimes tuned for real deployment
+## Running, not published
 
-## // t34m-z3r0 doctrine
+`picobot-v2` — autonomous Telegram operator bot: local Ollama inference, twelve agent
+roles, AES-256-GCM config vault, SQLite state, stdlib dashboard, three-tier SD imaging.
+Private while it carries live credentials.
 
-```text
-AI should not be a toy.
-AI should not be trapped in a cloud dashboard.
-AI should sit in the operator loop, carry context, learn the environment,
-surface signal, and accelerate security work without creating more noise.
-```
-
-That is the lane:
-
-- local models with operational roles
-- security systems with memory and context
-- dashboards that behave like command centers
-- chat interfaces designed for operators
-- threat intelligence that turns into action instead of dead screenshots
-
-## // active lanes
+## How I build
 
 ```text
-quick lane       -> qwen2.5:0.5b
-reasoning lane   -> dolphin3:latest
-code lane        -> qwen2.5-coder:1.5b
-deep code lane   -> huihui_ai/qwen2.5-coder-abliterate:7b
-experimental     -> gemma4 sidecar via llama.cpp
+own the inference        → local models first, cloud only when it is the right tool
+own the transport        → Tailscale or nothing; no vendor relay sees the screen
+ship the smallest thing  → one file beats a deployment ceremony
+state the limits         → a README that hides failure modes is marketing
 ```
 
-## // current obsessions
-
-- offensive security automation
-- secure local AI on constrained hardware
-- Telegram-native control surfaces
-- wireless assessment and threat mapping
-- operator-facing tooling with a strong UI identity
-- resilient systems that stay useful under real conditions
-
-## // build philosophy
+## Stack
 
 ```text
-No cloud dependency if it can be owned.
-No fake autonomy.
-No sterile UI.
-No dead dashboards.
-Only systems that move, report, adapt, and survive.
+python · java/kotlin · ts · rust · bash        sqlite · systemd · redis
+ollama · llama.cpp · codex · claude code       android (adb, scrcpy, fgs)
+raspberry pi 5 · rtx 5070 laptop · tailscale   nmap · rustscan · ghidra
 ```
 
-## // ai x security
-
-```text
-offensive security meets local inference
-security engineering meets system design
-threat intel meets autonomous execution
-```
-
-## // stack
-
-```text
-python | go | sqlite | systemd | telegram bots
-ollama | llama.cpp | codex | claude-code
-raspberry pi 5 | tailscale | mosh | threat intel tooling
-```
-
-## // aesthetic
-
-```text
-dark mode by default
-dark operator energy
-operator dashboards with pulse
-crt grime over flat corporate glass
-cyberpunk terminal over beige management software
-```
-
-## // contact
+## Contact
 
 - GitHub: [@ghost-injection](https://github.com/ghost-injection)
 - Email: `ghost.injection@proton.me`
 
----
-
 <div align="center">
-  <sub>hack the planet. keep the mask on. let the signal breathe.</sub>
+  <sub>hack the planet. keep the mask on.</sub>
 </div>
