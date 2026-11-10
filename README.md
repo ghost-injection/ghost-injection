@@ -3,7 +3,7 @@
 
   # ghost-injection
 
-  **Security tooling, local AI systems, and operator interfaces — built to run on hardware I own.**
+  **Security tooling, local AI systems, and operator interfaces - built to run on hardware I own.**
 </div>
 
 ---
@@ -18,14 +18,14 @@ Raspberry Pi.
 | Repository | What it does |
 |---|---|
 | [**GhostLink**](https://github.com/ghost-injection/GhostLink) | Mirror and control Android from Windows over Tailscale. No USB, no port forwarding, no relay, no root. Native helper APK + themed scrcpy controller. |
-| [**AegisWardrive**](https://github.com/ghost-injection/AegisWardrive) | Passive WiFi survey for Android: sweep, score, map, export KML/CSV. No root, no monitor mode — it reads what the OS already broadcasts. |
+| [**AegisWardrive**](https://github.com/ghost-injection/AegisWardrive) | Passive WiFi survey for Android: sweep, score, map, export KML/CSV. No root, no monitor mode - it reads what the OS already broadcasts. |
 | [**reaper**](https://github.com/ghost-injection/creative-projects/tree/main/reaper) | Single-file process hunter for Windows and Linux. Find by name, port, or command line; kill the exact set with a dry run first. |
 | [**pid-sniper**](https://github.com/ghost-injection/AI-Research-OffSec/tree/main/pid-sniper) | Click a window, get its PID, parent, path, and class. Plus a popup radar that logs new dialogs as they appear. |
 | [**CipherShell Memory**](https://github.com/ghost-injection/CipherShell-Memory) | Private Obsidian vault used as durable memory for Codex, Hermes, Claude Code, and local model lanes. |
 
 ## Running, not published
 
-`picobot-v2` — autonomous Telegram operator bot: local Ollama inference, twelve agent
+`picobot-v2` - autonomous Telegram operator bot: local Ollama inference, twelve agent
 roles, AES-256-GCM config vault, SQLite state, stdlib dashboard, three-tier SD imaging.
 Private while it carries live credentials.
 
