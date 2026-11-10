@@ -27,7 +27,7 @@ Raspberry Pi.
 
 `picobot-v2` - autonomous Telegram operator bot: local Ollama inference, twelve agent
 roles, AES-256-GCM config vault, SQLite state, stdlib dashboard, three-tier SD imaging.
-Private while it carries live credentials.
+Private.
 
 ## How I build
 
@@ -41,9 +41,9 @@ state the limits         → a README that hides failure modes is marketing
 ## Stack
 
 ```text
-python · java/kotlin · ts · rust · bash        sqlite · systemd · redis
-ollama · llama.cpp · codex · claude code       android (adb, scrcpy, fgs)
-raspberry pi 5 · rtx 5070 laptop · tailscale   nmap · rustscan · ghidra
+python · java · bash              sqlite · systemd · obsidian
+ollama · llama.cpp · codex        android (adb, scrcpy, foreground service)
+pi 5 · tailscale · windows        nmap · rustscan · ghidra
 ```
 
 ## Contact
